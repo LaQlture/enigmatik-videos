@@ -1,0 +1,24 @@
+{
+ "type": "enquete", "date": "2026-12-01", "titre": "Le tableau volé",
+ "recit": [
+  "Trois heures du matin, en plein orage, au manoir Dubois.",
+  "Le tableau le plus précieux de la maison vient de disparaître.",
+  "Sur le parquet : des traces de boue toute fraîche.",
+  "Et la fenêtre a été forcée.",
+  "L'inspecteur Moreau interroge les trois personnes présentes cette nuit-là.",
+  "Écoute bien : l'un d'eux ment."
+ ],
+ "evenements": {"tableau": 1, "traces": 2, "fenetre": 3, "inspecteur": 4},
+ "suspects": [
+  {"perso": "gardien", "nom": "Le gardien", "voix": 0.86, "court": "Faisait sa ronde au 2e étage",
+   "dit": "Je faisais ma ronde au deuxième étage. Avec le tonnerre, je n'ai rien entendu."},
+  {"perso": "cuisiniere", "nom": "La cuisinière", "voix": 1.1, "court": "Préparait le pain en cuisine",
+   "dit": "J'étais en cuisine, je préparais le pain du petit-déjeuner. Je n'ai pas quitté mes fourneaux."},
+  {"perso": "jardinier", "nom": "Le jardinier", "voix": 0.9, "court": "Arrosait les rosiers dehors",
+   "dit": "Moi ? J'étais dehors, j'arrosais les rosiers du jardin, comme chaque nuit."}
+ ],
+ "menteur": 2, "reponse": "Le jardinier", "indice": "Il pleuvait à verse !",
+ "explication": "Personne n'arrose ses rosiers sous un orage ! Et ses bottes ont laissé la boue.",
+ "explication_tts": "C'est le jardinier ! Personne n'arrose ses rosiers en plein orage. Et ce sont ses bottes pleines de boue qui ont laissé les traces.",
+ "legende": "Une seule personne ment… tu trouves laquelle ? 🔍 Réponds en commentaire avant la fin du chrono 👇 #enquete #enigme #enigmes #detective #logique #mystere #fyp"
+}

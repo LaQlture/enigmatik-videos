@@ -20,8 +20,12 @@ def main(src):
     c = json.load(open(src))
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     work = f"/tmp/enigmatik/{c['date']}"; os.makedirs(work, exist_ok=True)
-    from enigme import Enigmes
-    OBJ = Enigmes(c, work)          # vérifie aussi le contenu (formats, calculs des symboles…)
+    if c["type"] == "enquete":
+        from enquete import Enquete
+        OBJ = Enquete(c, work)
+    else:
+        from enigme import Enigmes
+        OBJ = Enigmes(c, work)      # vérifie aussi le contenu (formats, calculs des symboles…)
     t = time.time()
     OBJ.voices()
     tl = OBJ.timeline(); total = sum(d for _, d in tl)
@@ -41,7 +45,7 @@ def main(src):
         for n in pool.imap_unordered(_render, jobs): print("scène", n, flush=True)
     wav = f"{work}/mix.wav"; OBJ.audio(tl, wav)
     os.makedirs(f"{repo}/videos", exist_ok=True)
-    out = f"{repo}/videos/{c['date']}_enigmes.mp4"
+    out = f"{repo}/videos/{c['date']}_{c['type']}.mp4"
     assemble([j[2] for j in jobs], wav, out)
     d = duration(out)
     print(json.dumps({"video": out, "duree": round(d, 1), "verif": f"{work}/verif.jpg", "temps_s": round(time.time() - t)}))
