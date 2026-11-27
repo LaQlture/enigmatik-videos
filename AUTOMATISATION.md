@@ -84,3 +84,15 @@ Vérifier que `https://raw.githubusercontent.com/<compte>/<dépôt>/main/videos/
 ## 5. En cas de problème
 Ne jamais programmer une vidéo défectueuse, une énigme douteuse ou un doublon. Si une étape échoue après une nouvelle
 tentative, s'arrêter et envoyer un message clair à l'utilisateur. Terminer par un court résumé : formats, réponses, durée, heure.
+
+## Règles validées par l'utilisateur (nov. 2026)
+- **Voix : ElevenLabs uniquement**, voix Tomas (`eaGBbHXreemvYFjnRcMw`, modèle `eleven_v4`), une seule prise par vidéo.
+  Télécharger le mp3 et la transcription mot à mot (`words.json`) dans `contenu/voix/`.
+- **Quiz** (`pipeline/enigme_audio.py`) : la voix lit une phrase d'**accroche** au début (champ `accroche`, ex.
+  « Impossible de trouver toutes les réponses ! »), puis seulement « Énigme N. question » et « Réponse : … ! ».
+  Rien d'autre n'est lu (ni propositions, ni explication, ni milieu, ni fin). Texte à faire lire :
+  `python3 pipeline/enigme_audio.py contenu/<date>_enigmes.json --texte`.
+- **Enquêtes** (`pipeline/enquete_audio.py`) : accroche dès le début, pas de solution (réponse en commentaire),
+  **un décor différent à chaque enquête** — ne pas réutiliser la même pièce avec fenêtre à gauche et objet au centre.
+  Déjà utilisés : salon du manoir (orage), chalet en rondins (neige).
+- **Pas de pluie animée ni de bruit de pluie** (effet grésillant) ; **bruitages discrets** (`volume_bruitages` 0.45).

@@ -1,7 +1,8 @@
 """Vidéo « Énigmes » avec la voix ElevenLabs (Tomas).
 
-Règle de la chaîne : la voix lit SEULEMENT « Énigme N. <question> » puis « Réponse : … ! ».
-Pas d'intro, de milieu ni de conclusion parlés (ces écrans restent, en texte + musique).
+Règle de la chaîne : la voix lit une phrase d'accroche au début (« accroche » : texte affiché + mp3),
+puis SEULEMENT « Énigme N. <question> » et « Réponse : … ! ». Pas de milieu ni de conclusion parlés.
+Bruitages discrets : « volume_bruitages » (0.45 par défaut).
 
 Le contenu JSON garde le format de enigme.py, avec en plus :
   "audio": "voix/<date>_enigmes.mp3"       une seule prise ElevenLabs : les 10 phrases dans l'ordre
@@ -10,9 +11,10 @@ Texte à faire lire : python3 pipeline/enigme_audio.py contenu/<date>_enigmes.js
 """
 import json, os, subprocess, sys
 import numpy as np
+from PIL import Image, ImageDraw
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import *
-from enigme import Enigmes, CHORDS
+from enigme import Enigmes, CHORDS, wrap2, CX, CW
 from enquete_audio import _tokens, point_calme, charger_mots
 
 MUET = {"intro": 1.8, "mid": 2.6, "outro": 2.6}      # durée des écrans sans voix (s)
@@ -67,11 +69,32 @@ class EnigmesAudio(Enigmes):
             open(p + ".f32", "wb").write(seg.astype(np.float32).tobytes())
             subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", p + ".f32", p], check=True)
             os.remove(p + ".f32"); self.DUR[k] = round(len(seg) / SR, 3)
+        acc = c.get("accroche")                               # phrase d'accroche lue au début
+        if acc:
+            x = load(os.path.join(self.base, acc["audio"]))
+            env = np.convolve(np.abs(x), np.ones(441) / 441, mode="same"); nz = np.nonzero(env > 0.03 * env.max())[0]
+            x = x[max(0, nz[0] - int(0.05 * SR)): nz[-1] + int(0.15 * SR)]
+            p = f"{w}/intro.wav"; open(p + ".f32", "wb").write(x.astype(np.float32).tobytes())
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", p + ".f32", p], check=True)
+            os.remove(p + ".f32"); self.DUR["intro"] = max(MUET["intro"], round(len(x) / SR, 3) + 0.3)
+
+    def draw_intro(self, t):
+        acc = self.c.get("accroche")
+        if not acc: return super().draw_intro(t)
+        h = self.hook; self.hook = (h[0], "", h[2])
+        im = super().draw_intro(t); self.hook = h
+        lay = Image.new("RGBA", (W, 200), (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+        for k, ln in enumerate(wrap2(acc["texte"].upper(), font(58, "Black"), CW)):
+            dl.text((CX, 50 + k * 72), ln, font=font(58, "Black"), fill=WHITE, anchor="mm", stroke_width=6, stroke_fill=(8, 8, 18))
+        paste(im, lay, 0, 830, alpha=min(1, t * 4), scale=1.06 - 0.06 * ease_out(t / 0.3))
+        return im
 
     def audio(self, tl, wav):
         total = sum(d for _, d in tl); tr = Track(total); t0 = 0.0
         for name, dur in tl:
-            if name == "intro": tr.add(tr.sfx, WHOOSH, t0 + 0.1, 0.2)
+            if name == "intro":
+                tr.add(tr.sfx, WHOOSH, t0 + 0.1, 0.2)
+                if self.c.get("accroche"): tr.add(tr.voice, load(f"{self.work}/intro.wav"), t0 + 0.2)
             elif name in ("mid", "outro"):
                 tr.add(tr.sfx, WHOOSH, t0, 0.25)
                 if name == "outro": tr.add(tr.sfx, DING, t0 + 1.2, 0.25)
@@ -82,6 +105,7 @@ class EnigmesAudio(Enigmes):
                     tr.add(tr.sfx, TICK if k % 2 == 0 else TOCK, t0 + T["t_cd"] + k, 0.45 if T["n"] - k > 2 else 0.7)
                 tr.add(tr.sfx, DING, t0 + T["t_rev"], 0.45); tr.add(tr.voice, load(f"{self.work}/a{i}.wav"), t0 + T["t_ans"])
             t0 += dur
+        tr.sfx *= self.c.get("volume_bruitages", 0.45)       # bruitages discrets
         mixdown(tr, wav, chords=CHORDS, bpm=92)
 
 

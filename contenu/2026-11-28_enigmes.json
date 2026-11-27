@@ -90,5 +90,9 @@
   "voice_id": "eaGBbHXreemvYFjnRcMw",
   "nom": "Tomas",
   "model_id": "eleven_v4"
+ },
+ "accroche": {
+  "texte": "Impossible de trouver toutes les réponses !",
+  "audio": "voix/accroche_impossible.mp3"
  }
 }
