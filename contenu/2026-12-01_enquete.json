@@ -1,0 +1,60 @@
+{
+ "type": "enquete",
+ "date": "2026-12-01",
+ "titre": "Panne au manoir",
+ "audio": "voix/2026-12-01_enquete.mp3",
+ "mots": "voix/2026-12-01_enquete_mots.json",
+ "voix_elevenlabs": {"voice_id": "eaGBbHXreemvYFjnRcMw", "nom": "Tomas", "model_id": "eleven_v4"},
+ "accroche": "Si tu résous cette énigme, tu es un bon inspecteur.",
+ "recit": [
+  "Une nuit d'orage, au manoir Delacroix.",
+  "À vingt-deux heures, la foudre frappe le transformateur : plus une seule lumière dans la maison.",
+  "Le courant ne reviendra qu'à minuit.",
+  "Quand les lampes se rallument, le majordome pousse un cri.",
+  "Le tableau le plus précieux du salon a disparu.",
+  "Il ne reste que le cadre vide, posé contre le mur.",
+  "Cette nuit-là, il n'y avait que trois personnes dans le manoir.",
+  "L'inspecteur les interroge, une par une."
+ ],
+ "plans": ["large", "fenetre", "large", "large", "tableau", "suivre", "large", "large"],
+ "panne": [1, 3],
+ "inspecteur": {
+  "4": [900, "debout"],
+  "5": [720, "loupe_haut"],
+  "6": [640, "debout"],
+  "7": [640, "debout"]
+ },
+ "evenements": {"tableau": 4},
+ "suspects": [
+  {
+   "perso": "majordome",
+   "nom": "Le majordome",
+   "court": "Écrivait à la bougie",
+   "intro": "Le majordome, d'abord :",
+   "dit": "J'étais dans ma chambre. J'ai allumé une bougie et j'ai écrit une lettre à ma sœur. Avec l'orage, je n'ai rien entendu."
+  },
+  {
+   "perso": "cuisiniere",
+   "nom": "La cuisinière",
+   "court": "Rangeait à la lampe de poche",
+   "intro": "La cuisinière :",
+   "dit": "Moi, j'étais à la cuisine. J'ai rangé la vaisselle à la lampe de poche, en attendant que le courant revienne."
+  },
+  {
+   "perso": "neveu",
+   "nom": "Le neveu",
+   "court": "Regardait un film à la télé",
+   "intro": "Et enfin, le neveu du propriétaire :",
+   "dit": "J'étais dans ma chambre, je regardais un film à la télé. Quand il s'est terminé, je me suis endormi."
+  }
+ ],
+ "carnet": "L'inspecteur referme son carnet. Il sait déjà qui ment.",
+ "recap": [
+  {"icone": "orage", "texte": "Un orage toute la soirée"},
+  {"icone": "courant", "texte": "Plus de courant de 22 h à minuit"},
+  {"icone": "cadre", "texte": "Le tableau disparaît dans le noir"}
+ ],
+ "fin": "Et toi ? Qui a volé le tableau ? Écris ta réponse en commentaire… et regarde si les autres ont trouvé.",
+ "reponse": "Le neveu (pas de télé sans courant)",
+ "legende": "Un seul suspect ment… tu trouves lequel ? 🔍 Ta réponse en commentaire 👇 #enquete #enigme #enigmes #detective #logique #mystere #fyp"
+}

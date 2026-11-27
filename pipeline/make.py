@@ -20,7 +20,10 @@ def main(src):
     c = json.load(open(src))
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     work = f"/tmp/enigmatik/{c['date']}"; os.makedirs(work, exist_ok=True)
-    if c["type"] == "enquete":
+    if c["type"] == "enquete" and c.get("audio"):       # voix off externe (ElevenLabs)
+        from enquete_audio import EnqueteAudio
+        OBJ = EnqueteAudio(c, work, os.path.dirname(os.path.abspath(src)))
+    elif c["type"] == "enquete":
         from enquete import Enquete
         OBJ = Enquete(c, work)
     else:
