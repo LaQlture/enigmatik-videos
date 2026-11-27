@@ -1,96 +1,104 @@
 {
  "type": "enigmes",
  "date": "2026-11-30",
- "enigmes": [
-  {
-   "format": "devinette",
-   "texte": "J'ai des aiguilles, mais je ne pique jamais. Qui suis-je ?",
-   "reponse": "Une horloge",
-   "explication": "Une horloge (ou une montre) : ses aiguilles donnent l'heure."
-  },
-  {
-   "format": "suite",
-   "items": [
-    "2",
-    "5",
-    "8",
-    "11",
-    "?"
-   ],
-   "reponse": "14",
-   "explication": "On ajoute 3 à chaque fois."
-  },
-  {
-   "format": "symboles",
-   "lignes": [
-    [
-     "losange",
-     "+",
-     "losange",
-     "=",
-     "8"
-    ],
-    [
-     "losange",
-     "+",
-     "etoile",
-     "=",
-     "13"
-    ],
-    [
-     "etoile",
-     "-",
-     "cercle",
-     "=",
-     "6"
-    ],
-    [
-     "cercle",
-     "+",
-     "losange",
-     "+",
-     "etoile",
-     "=",
-     "?"
-    ]
-   ],
-   "valeurs": {
-    "losange": 4,
-    "etoile": 9,
-    "cercle": 3
-   },
-   "reponse": "16",
-   "explication": "Losange 4, étoile 9, cercle 3. Donc 3 + 4 + 9 = 16."
-  },
-  {
-   "format": "intrus",
-   "items": [
-    "Radar",
-    "Kayak",
-    "Ananas",
-    "Rotor"
-   ],
-   "ans": 2,
-   "reponse": "Ananas",
-   "explication": "Radar, kayak et rotor se lisent dans les deux sens. Pas ananas !"
-  },
-  {
-   "format": "logique",
-   "texte": "Un nénuphar double de taille chaque jour. Il couvre tout l'étang en 30 jours. En combien de jours couvre-t-il la moitié de l'étang ?",
-   "reponse": "29 jours",
-   "explication": "Il double chaque jour : la veille du 30e jour, il couvrait donc la moitié."
-  }
- ],
- "legende": "Tu bats ton record aujourd'hui ? 🧠 Dis ton score 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp",
- "audio": "voix/2026-11-30_enigmes.mp3",
- "mots": "voix/2026-11-30_enigmes_mots.json",
  "voix_elevenlabs": {
   "voice_id": "eaGBbHXreemvYFjnRcMw",
   "nom": "Tomas",
   "model_id": "eleven_v4"
  },
  "accroche": {
-  "texte": "Impossible de trouver toutes les réponses !",
-  "audio": "voix/accroche_impossible.mp3"
+  "texte": "Seul le 1 % trouve les 5 réponses… Et toi ?",
+  "tts": "Seul le 1 % trouve les cinq réponses… Et toi ?"
+ },
+ "milieu": {
+  "texte": "Pense à t'abonner pour ne rater aucun quiz !"
+ },
+ "enigmes": [
+  {
+   "format": "intrus",
+   "items": [
+    "Mercure",
+    "Vénus",
+    "Pluton",
+    "Saturne"
+   ],
+   "ans": 2,
+   "reponse": "Pluton",
+   "explication": "Depuis 2006, Pluton n'est plus une planète : c'est une planète naine."
+  },
+  {
+   "format": "suite",
+   "consigne": "Quelle lettre complète la suite ?",
+   "items": [
+    "U",
+    "D",
+    "T",
+    "Q",
+    "C",
+    "?"
+   ],
+   "reponse": "S",
+   "explication": "Ce sont les initiales de Un, Deux, Trois, Quatre, Cinq… puis Six.",
+   "tts_reponse": "la lettre S"
+  },
+  {
+   "format": "logique",
+   "texte": "Le père de Marie a cinq filles : Lala, Lélé, Lili et Lolo. Comment s'appelle la cinquième ?",
+   "reponse": "Marie",
+   "explication": "C'est écrit dès le début : c'est le père de Marie !"
+  },
+  {
+   "format": "symboles",
+   "lignes": [
+    [
+     "etoile",
+     "+",
+     "etoile",
+     "=",
+     "10"
+    ],
+    [
+     "etoile",
+     "×",
+     "losange",
+     "=",
+     "15"
+    ],
+    [
+     "hexagone",
+     "-",
+     "losange",
+     "=",
+     "4"
+    ],
+    [
+     "hexagone",
+     "-",
+     "etoile",
+     "×",
+     "losange",
+     "=",
+     "?"
+    ]
+   ],
+   "valeurs": {
+    "etoile": 5,
+    "losange": 3,
+    "hexagone": 7
+   },
+   "reponse": "-8",
+   "tts_reponse": "moins 8",
+   "explication": "Étoile 5, losange 3, hexagone 7. Multiplication d'abord : 7 − 15 = −8."
+  },
+  {
+   "format": "logique",
+   "texte": "Un train de 1 km roule à 1 km par minute. Il traverse un tunnel de 1 km. Combien de minutes faut-il pour qu'il soit entièrement passé ?",
+   "reponse": "2 minutes",
+   "explication": "L'avant doit parcourir 2 km (tunnel + longueur du train) : 2 minutes à 1 km/min."
+  }
+ ],
+ "legende": "Seul le 1 % trouve les 5 réponses 🧠 Tu en fais partie ? Ton score en commentaire 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp",
+ "fin": {
+  "texte": "Alors, combien sur cinq ? Mets ton score en commentaire, on fait le classement !"
  }
 }

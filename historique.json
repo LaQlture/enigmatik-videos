@@ -55,62 +55,6 @@
   "resume": "Si 5 machines fabriquent 5 objets en 5 minutes, combien de minutes faut-il à 100 machines pour fabriquer 100 objets ?"
  },
  {
-  "date": "2026-11-28",
-  "format": "intrus",
-  "reponse": "lune",
-  "cle": [
-   "jupiter",
-   "lune",
-   "mars",
-   "venus"
-  ],
-  "resume": "Mars Vénus Lune Jupiter"
- },
- {
-  "date": "2026-11-28",
-  "format": "suite",
-  "reponse": "36",
-  "cle": [
-   "1",
-   "4",
-   "9",
-   "16",
-   "25"
-  ],
-  "resume": "1 4 9 16 25 ?"
- },
- {
-  "date": "2026-11-28",
-  "format": "devinette",
-  "reponse": "serviette",
-  "cle": "plus je seche plus je suis mouillee qui suis je",
-  "resume": "Plus je sèche, plus je suis mouillée. Qui suis-je ?"
- },
- {
-  "date": "2026-11-28",
-  "format": "symboles",
-  "reponse": "22",
-  "cle": [
-   "etoile=6",
-   "hexagone=3",
-   "losange=4"
-  ],
-  "lignes": [
-   "etoile + etoile = 12",
-   "etoile + losange = 10",
-   "losange - hexagone = 1",
-   "hexagone × etoile + losange = ?"
-  ],
-  "resume": "etoile + etoile = 12 | etoile + losange = 10 | losange - hexagone = 1 | hexagone × etoile + losange = ?"
- },
- {
-  "date": "2026-11-28",
-  "format": "logique",
-  "reponse": "5 centimes",
-  "cle": "batte et balle coutent 1 10 au total batte coute 1 plus que balle combien coute balle",
-  "resume": "Une batte et une balle coûtent 1,10 € au total. La batte coûte 1 € de plus que la balle. Combien coûte la balle ?"
- },
- {
   "date": "2026-11-29",
   "format": "suite",
   "reponse": "i",
@@ -166,58 +110,115 @@
   "resume": "cercle + cercle + cercle = 21 | carre + carre + cercle = 17 | triangle × carre = 20 | carre × carre - triangle + cercle = ?"
  },
  {
-  "date": "2026-11-30",
-  "format": "devinette",
-  "reponse": "horloge",
-  "cle": "j ai aiguilles mais je ne pique jamais qui suis je",
-  "resume": "J'ai des aiguilles, mais je ne pique jamais. Qui suis-je ?"
- },
- {
-  "date": "2026-11-30",
+  "date": "2026-11-28",
   "format": "suite",
-  "reponse": "14",
+  "reponse": "42",
   "cle": [
    "2",
-   "5",
-   "8",
-   "11"
+   "6",
+   "12",
+   "20",
+   "30"
   ],
-  "resume": "2 5 8 11 ?"
+  "resume": "2 6 12 20 30 ?"
  },
  {
-  "date": "2026-11-30",
-  "format": "symboles",
-  "reponse": "16",
+  "date": "2026-11-28",
+  "format": "intrus",
+  "reponse": "pingouin",
   "cle": [
-   "cercle=3",
-   "etoile=9",
-   "losange=4"
+   "chauve souris",
+   "dauphin",
+   "ornithorynque",
+   "pingouin"
+  ],
+  "resume": "Dauphin Pingouin Chauve-souris Ornithorynque"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "symboles",
+  "reponse": "43",
+  "cle": [
+   "carre=9",
+   "cercle=4",
+   "triangle=7"
   ],
   "lignes": [
-   "losange + losange = 8",
-   "losange + etoile = 13",
-   "etoile - cercle = 6",
-   "cercle + losange + etoile = ?"
+   "triangle + triangle + triangle = 21",
+   "cercle × cercle = 16",
+   "carre - cercle = 5",
+   "triangle + carre × cercle = ?"
   ],
-  "resume": "losange + losange = 8 | losange + etoile = 13 | etoile - cercle = 6 | cercle + losange + etoile = ?"
+  "resume": "triangle + triangle + triangle = 21 | cercle × cercle = 16 | carre - cercle = 5 | triangle + carre × cercle = ?"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "logique",
+  "reponse": "20 ans",
+  "cle": "dans 10 ans leo aura double age qu il avait il y a 5 ans quel age a leo aujourd hui",
+  "resume": "Dans 10 ans, Léo aura le double de l'âge qu'il avait il y a 5 ans. Quel âge a Léo aujourd'hui ?"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "devinette",
+  "reponse": "lettre r",
+  "cle": "je suis au debut route a fin trottoir et deux fois dans riviere qui suis je",
+  "resume": "Je suis au début de la route, à la fin du trottoir et deux fois dans la rivière. Qui suis-je ?"
  },
  {
   "date": "2026-11-30",
   "format": "intrus",
-  "reponse": "ananas",
+  "reponse": "pluton",
   "cle": [
-   "ananas",
-   "kayak",
-   "radar",
-   "rotor"
+   "mercure",
+   "pluton",
+   "saturne",
+   "venus"
   ],
-  "resume": "Radar Kayak Ananas Rotor"
+  "resume": "Mercure Vénus Pluton Saturne"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "suite",
+  "reponse": "s",
+  "cle": [
+   "u",
+   "",
+   "t",
+   "q",
+   "c"
+  ],
+  "resume": "U D T Q C ?"
  },
  {
   "date": "2026-11-30",
   "format": "logique",
-  "reponse": "29 jours",
-  "cle": "nenuphar double taille chaque jour il couvre tout etang en 30 jours en combien jours couvre t il moitie etang",
-  "resume": "Un nénuphar double de taille chaque jour. Il couvre tout l'étang en 30 jours. En combien de jours couvre-t-il la moitié de l'étang ?"
+  "reponse": "marie",
+  "cle": "pere marie a cinq filles lala lele lili et lolo comment s appelle cinquieme",
+  "resume": "Le père de Marie a cinq filles : Lala, Lélé, Lili et Lolo. Comment s'appelle la cinquième ?"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "symboles",
+  "reponse": "8",
+  "cle": [
+   "etoile=5",
+   "hexagone=7",
+   "losange=3"
+  ],
+  "lignes": [
+   "etoile + etoile = 10",
+   "etoile × losange = 15",
+   "hexagone - losange = 4",
+   "hexagone - etoile × losange = ?"
+  ],
+  "resume": "etoile + etoile = 10 | etoile × losange = 15 | hexagone - losange = 4 | hexagone - etoile × losange = ?"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "logique",
+  "reponse": "2 minutes",
+  "cle": "train 1 km roule a 1 km par minute il traverse tunnel 1 km combien minutes faut il pour qu il soit entierement passe",
+  "resume": "Un train de 1 km roule à 1 km par minute. Il traverse un tunnel de 1 km. Combien de minutes faut-il pour qu'il soit entièrement passé ?"
  }
 ]
