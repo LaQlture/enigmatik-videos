@@ -108,6 +108,7 @@ class EnqueteAudio(Enquete):
 
     def __init__(self, c, work, base):
         super().__init__(c, work); self.base = base
+        if not c.get("pluie"): self.rnd = []                # pas de pluie animée (effet grésillant)
         if not c.get("fenetre_cassee"):                    # fenêtre intacte (sinon faux indice)
             wx, wy, ww, wh = WIN; self.bars = Image.new("RGBA", (SCN_W, SCN_H), (0, 0, 0, 0)); bd = ImageDraw.Draw(self.bars)
             bd.rectangle([wx + ww / 2 - 6, wy, wx + ww / 2 + 6, wy + wh], fill=(120, 84, 60))
@@ -281,8 +282,6 @@ class EnqueteAudio(Enquete):
                 if "panne" in self.c:
                     a, b = self.c["panne"]
                     tr.add(tr.sfx, THUNDER, t0 + st[a] + self.DUR[f"r{a}"] * 0.45 - 0.1, 0.8)
-                    tr.add(tr.sfx, ZAP, t0 + st[a] + self.DUR[f"r{a}"] * 0.45, 0.35)
-                    tr.add(tr.sfx, ZAP, t0 + st[b] + 0.2, 0.25)
             elif name.startswith("sus"):
                 i = int(name[3:]); tq, ts, _ = self.sus_plan(i)
                 tr.add(tr.voice, load(f"{w}/n{i}.wav"), t0 + tq); tr.add(tr.voice, load(f"{w}/s{i}.wav"), t0 + ts)
@@ -296,5 +295,5 @@ class EnqueteAudio(Enquete):
                 for ft in flash_times(dur + shift, off):
                     if ft - shift >= 0: tr.add(tr.sfx, THUNDER, t0 + ft - shift + 0.15, 0.4)
             t0 += dur
-        tr.sfx += colored(tr.N, 800, 9000) * 0.035
+        if self.c.get("pluie"): tr.sfx += colored(tr.N, 800, 9000) * 0.035   # bruit de pluie de fond
         mixdown(tr, wav, music_gain=0.35, soft=True, chords=E.CHORDS, bpm=78)
