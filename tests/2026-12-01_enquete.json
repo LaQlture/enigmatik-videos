@@ -1,24 +1,107 @@
 {
- "type": "enquete", "date": "2026-12-01", "titre": "Le tableau volé",
+ "type": "enquete",
+ "date": "2026-12-01",
+ "titre": "Le tableau volé",
+ "accroche": "Si tu trouves le menteur, tu es un vrai inspecteur.",
  "recit": [
-  "Trois heures du matin, en plein orage, au manoir Dubois.",
-  "Le tableau le plus précieux de la maison vient de disparaître.",
-  "Sur le parquet : des traces de boue toute fraîche.",
-  "Et la fenêtre a été forcée.",
-  "L'inspecteur Moreau interroge les trois personnes présentes cette nuit-là.",
-  "Écoute bien : l'un d'eux ment."
+  "Trois heures du matin. Un violent orage s'abat sur le manoir Dubois.",
+  "Les routes sont coupées : personne n'a pu entrer ni sortir du domaine.",
+  "Dans le salon, le tableau le plus précieux de la famille vient de disparaître.",
+  "L'inspecteur Moreau arrive aussitôt sur les lieux.",
+  "Il fait lentement le tour de la pièce, sans dire un mot.",
+  "Il examine le cadre : le tableau a été décroché avec soin, sans rien casser.",
+  "Sur le parquet, il remarque des traces de boue encore fraîches.",
+  "Elles mènent tout droit à la fenêtre… forcée de l'extérieur.",
+  "Cette nuit-là, seules trois personnes se trouvaient au manoir.",
+  "Il les interroge une par une. Écoute bien : l'un d'eux ment."
  ],
- "evenements": {"tableau": 1, "traces": 2, "fenetre": 3, "inspecteur": 4},
+ "plans": [
+  "large",
+  "large",
+  "tableau",
+  "suivre",
+  "suivre",
+  "suivre",
+  "suivre",
+  "suivre",
+  "large",
+  "large"
+ ],
+ "inspecteur": {
+  "3": [
+   900,
+   "debout"
+  ],
+  "4": [
+   1120,
+   "debout"
+  ],
+  "5": [
+   720,
+   "loupe_haut"
+  ],
+  "6": [
+   610,
+   "loupe_bas"
+  ],
+  "7": [
+   300,
+   "loupe_haut"
+  ],
+  "8": [
+   650,
+   "debout"
+  ]
+ },
+ "evenements": {
+  "tableau": 2,
+  "traces": 6,
+  "fenetre": 7
+ },
  "suspects": [
-  {"perso": "gardien", "nom": "Le gardien", "voix": 0.86, "court": "Faisait sa ronde au 2e étage",
-   "dit": "Je faisais ma ronde au deuxième étage. Avec le tonnerre, je n'ai rien entendu."},
-  {"perso": "cuisiniere", "nom": "La cuisinière", "voix": 1.1, "court": "Préparait le pain en cuisine",
-   "dit": "J'étais en cuisine, je préparais le pain du petit-déjeuner. Je n'ai pas quitté mes fourneaux."},
-  {"perso": "jardinier", "nom": "Le jardinier", "voix": 0.9, "court": "Arrosait les rosiers dehors",
-   "dit": "Moi ? J'étais dehors, j'arrosais les rosiers du jardin, comme chaque nuit."}
+  {
+   "perso": "gardien",
+   "nom": "Le gardien",
+   "voix": 0.92,
+   "court": "Faisait sa ronde au 2e étage",
+   "question": "Bonsoir. Où étiez-vous à trois heures du matin, quand le tableau a disparu ?",
+   "dit": "Je faisais ma ronde au deuxième étage, comme toutes les nuits. Avec le tonnerre, je n'ai rien entendu du tout."
+  },
+  {
+   "perso": "cuisiniere",
+   "nom": "La cuisinière",
+   "voix": 1.12,
+   "court": "Préparait le pain en cuisine",
+   "question": "Et vous, madame ? Où étiez-vous à ce moment-là ?",
+   "dit": "J'étais en cuisine. Je préparais le pain du petit-déjeuner, et je n'ai pas quitté mes fourneaux de la nuit."
+  },
+  {
+   "perso": "jardinier",
+   "nom": "Le jardinier",
+   "voix": 0.8,
+   "court": "Arrosait les rosiers dehors",
+   "question": "Et vous, monsieur ? Qu'est-ce que vous faisiez cette nuit ?",
+   "dit": "Moi ? J'étais dehors, dans le jardin. J'arrosais les rosiers, comme chaque nuit. Ils ont besoin de beaucoup d'eau."
+  }
  ],
- "menteur": 2, "reponse": "Le jardinier", "indice": "Il pleuvait à verse !",
- "explication": "Personne n'arrose ses rosiers sous un orage ! Et ses bottes ont laissé la boue.",
- "explication_tts": "C'est le jardinier ! Personne n'arrose ses rosiers en plein orage. Et ce sont ses bottes pleines de boue qui ont laissé les traces.",
- "legende": "Une seule personne ment… tu trouves laquelle ? 🔍 Réponds en commentaire avant la fin du chrono 👇 #enquete #enigme #enigmes #detective #logique #mystere #fyp"
+ "recap": [
+  {
+   "icone": "orage",
+   "texte": "Un violent orage toute la nuit",
+   "voix": "Un violent orage, toute la nuit."
+  },
+  {
+   "icone": "boue",
+   "texte": "Des traces de boue fraîche",
+   "voix": "Des traces de boue encore fraîches."
+  },
+  {
+   "icone": "fenetre",
+   "texte": "Une fenêtre forcée de l'extérieur",
+   "voix": "Et une fenêtre forcée de l'extérieur."
+  }
+ ],
+ "fin": "Alors, d'après toi : qui ment ? Donne ta réponse en commentaire, et abonne-toi pour ne pas rater la prochaine enquête !",
+ "reponse": "Le jardinier",
+ "legende": "Un seul suspect ment… tu trouves lequel ? 🔍 Ta réponse en commentaire 👇 #enquete #enigme #enigmes #detective #logique #mystere #fyp"
 }
