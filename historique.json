@@ -1,1 +1,223 @@
-[]
+[
+ {
+  "date": "2026-11-27",
+  "format": "suite",
+  "reponse": "48",
+  "cle": [
+   "3",
+   "6",
+   "12",
+   "24"
+  ],
+  "resume": "3 6 12 24 ?"
+ },
+ {
+  "date": "2026-11-27",
+  "format": "intrus",
+  "reponse": "requin",
+  "cle": [
+   "baleine",
+   "dauphin",
+   "orque",
+   "requin"
+  ],
+  "resume": "Baleine Requin Dauphin Orque"
+ },
+ {
+  "date": "2026-11-27",
+  "format": "symboles",
+  "reponse": "19",
+  "cle": [
+   "carre=4",
+   "cercle=3",
+   "triangle=5"
+  ],
+  "lignes": [
+   "triangle + triangle + triangle = 15",
+   "triangle + cercle + cercle = 11",
+   "cercle + carre = 7",
+   "carre + triangle × cercle = ?"
+  ],
+  "resume": "triangle + triangle + triangle = 15 | triangle + cercle + cercle = 11 | cercle + carre = 7 | carre + triangle × cercle = ?"
+ },
+ {
+  "date": "2026-11-27",
+  "format": "devinette",
+  "reponse": "secret",
+  "cle": "plus j ai gardiens moins je suis garde qui suis je",
+  "resume": "Plus j'ai de gardiens, moins je suis gardé. Qui suis-je ?"
+ },
+ {
+  "date": "2026-11-27",
+  "format": "logique",
+  "reponse": "5 minutes",
+  "cle": "si 5 machines fabriquent 5 objets en 5 minutes combien minutes faut il a 100 machines pour fabriquer 100 objets",
+  "resume": "Si 5 machines fabriquent 5 objets en 5 minutes, combien de minutes faut-il à 100 machines pour fabriquer 100 objets ?"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "intrus",
+  "reponse": "lune",
+  "cle": [
+   "jupiter",
+   "lune",
+   "mars",
+   "venus"
+  ],
+  "resume": "Mars Vénus Lune Jupiter"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "suite",
+  "reponse": "36",
+  "cle": [
+   "1",
+   "4",
+   "9",
+   "16",
+   "25"
+  ],
+  "resume": "1 4 9 16 25 ?"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "devinette",
+  "reponse": "serviette",
+  "cle": "plus je seche plus je suis mouillee qui suis je",
+  "resume": "Plus je sèche, plus je suis mouillée. Qui suis-je ?"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "symboles",
+  "reponse": "22",
+  "cle": [
+   "etoile=6",
+   "hexagone=3",
+   "losange=4"
+  ],
+  "lignes": [
+   "etoile + etoile = 12",
+   "etoile + losange = 10",
+   "losange - hexagone = 1",
+   "hexagone × etoile + losange = ?"
+  ],
+  "resume": "etoile + etoile = 12 | etoile + losange = 10 | losange - hexagone = 1 | hexagone × etoile + losange = ?"
+ },
+ {
+  "date": "2026-11-28",
+  "format": "logique",
+  "reponse": "5 centimes",
+  "cle": "batte et balle coutent 1 10 au total batte coute 1 plus que balle combien coute balle",
+  "resume": "Une batte et une balle coûtent 1,10 € au total. La batte coûte 1 € de plus que la balle. Combien coûte la balle ?"
+ },
+ {
+  "date": "2026-11-29",
+  "format": "suite",
+  "reponse": "i",
+  "cle": [
+   "a",
+   "c",
+   "e",
+   "g"
+  ],
+  "resume": "A C E G ?"
+ },
+ {
+  "date": "2026-11-29",
+  "format": "devinette",
+  "reponse": "eponge",
+  "cle": "je suis pleine trous mais je retiens eau qui suis je",
+  "resume": "Je suis pleine de trous, mais je retiens l'eau. Qui suis-je ?"
+ },
+ {
+  "date": "2026-11-29",
+  "format": "intrus",
+  "reponse": "81",
+  "cle": [
+   "27",
+   "64",
+   "8",
+   "81"
+  ],
+  "resume": "8 27 64 81"
+ },
+ {
+  "date": "2026-11-29",
+  "format": "logique",
+  "reponse": "8 jours",
+  "cle": "escargot est au fond puits 10 metres chaque jour il monte 3 metres chaque nuit il glisse 2 metres en combien jours sort il",
+  "resume": "Un escargot est au fond d'un puits de 10 mètres. Chaque jour il monte de 3 mètres, chaque nuit il glisse de 2 mètres. En combien de jours sort-il ?"
+ },
+ {
+  "date": "2026-11-29",
+  "format": "symboles",
+  "reponse": "28",
+  "cle": [
+   "carre=5",
+   "cercle=7",
+   "triangle=4"
+  ],
+  "lignes": [
+   "cercle + cercle + cercle = 21",
+   "carre + carre + cercle = 17",
+   "triangle × carre = 20",
+   "carre × carre - triangle + cercle = ?"
+  ],
+  "resume": "cercle + cercle + cercle = 21 | carre + carre + cercle = 17 | triangle × carre = 20 | carre × carre - triangle + cercle = ?"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "devinette",
+  "reponse": "horloge",
+  "cle": "j ai aiguilles mais je ne pique jamais qui suis je",
+  "resume": "J'ai des aiguilles, mais je ne pique jamais. Qui suis-je ?"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "suite",
+  "reponse": "14",
+  "cle": [
+   "2",
+   "5",
+   "8",
+   "11"
+  ],
+  "resume": "2 5 8 11 ?"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "symboles",
+  "reponse": "16",
+  "cle": [
+   "cercle=3",
+   "etoile=9",
+   "losange=4"
+  ],
+  "lignes": [
+   "losange + losange = 8",
+   "losange + etoile = 13",
+   "etoile - cercle = 6",
+   "cercle + losange + etoile = ?"
+  ],
+  "resume": "losange + losange = 8 | losange + etoile = 13 | etoile - cercle = 6 | cercle + losange + etoile = ?"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "intrus",
+  "reponse": "ananas",
+  "cle": [
+   "ananas",
+   "kayak",
+   "radar",
+   "rotor"
+  ],
+  "resume": "Radar Kayak Ananas Rotor"
+ },
+ {
+  "date": "2026-11-30",
+  "format": "logique",
+  "reponse": "29 jours",
+  "cle": "nenuphar double taille chaque jour il couvre tout etang en 30 jours en combien jours couvre t il moitie etang",
+  "resume": "Un nénuphar double de taille chaque jour. Il couvre tout l'étang en 30 jours. En combien de jours couvre-t-il la moitié de l'étang ?"
+ }
+]

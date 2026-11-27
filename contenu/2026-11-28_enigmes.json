@@ -1,0 +1,87 @@
+{
+ "type": "enigmes",
+ "date": "2026-11-28",
+ "enigmes": [
+  {
+   "format": "intrus",
+   "items": [
+    "Mars",
+    "Vénus",
+    "Lune",
+    "Jupiter"
+   ],
+   "ans": 2,
+   "reponse": "Lune",
+   "explication": "C'est la seule qui n'est pas une planète : c'est un satellite de la Terre."
+  },
+  {
+   "format": "suite",
+   "items": [
+    "1",
+    "4",
+    "9",
+    "16",
+    "25",
+    "?"
+   ],
+   "reponse": "36",
+   "explication": "Ce sont les carrés : 1×1, 2×2, 3×3… puis 6×6 = 36."
+  },
+  {
+   "format": "devinette",
+   "texte": "Plus je sèche, plus je suis mouillée. Qui suis-je ?",
+   "reponse": "Une serviette",
+   "explication": "Plus elle sèche quelqu'un, plus elle se mouille."
+  },
+  {
+   "format": "symboles",
+   "lignes": [
+    [
+     "etoile",
+     "+",
+     "etoile",
+     "=",
+     "12"
+    ],
+    [
+     "etoile",
+     "+",
+     "losange",
+     "=",
+     "10"
+    ],
+    [
+     "losange",
+     "-",
+     "hexagone",
+     "=",
+     "1"
+    ],
+    [
+     "hexagone",
+     "×",
+     "etoile",
+     "+",
+     "losange",
+     "=",
+     "?"
+    ]
+   ],
+   "valeurs": {
+    "etoile": 6,
+    "losange": 4,
+    "hexagone": 3
+   },
+   "reponse": "22",
+   "explication": "Étoile 6, losange 4, hexagone 3. Multiplication d'abord : 18 + 4 = 22."
+  },
+  {
+   "format": "logique",
+   "texte": "Une batte et une balle coûtent 1,10 € au total. La batte coûte 1 € de plus que la balle. Combien coûte la balle ?",
+   "tts": "Une batte et une balle coûtent 1 euro 10 au total. La batte coûte 1 euro de plus que la balle. Combien coûte la balle ?",
+   "reponse": "5 centimes",
+   "explication": "Balle 0,05 € et batte 1,05 € : total 1,10 €, avec bien 1 € d'écart."
+  }
+ ],
+ "legende": "La dernière, tu la trouves ? 🤔 Ton score sur 5 en commentaire 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp"
+}

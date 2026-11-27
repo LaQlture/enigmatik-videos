@@ -1,0 +1,85 @@
+{
+ "type": "enigmes",
+ "date": "2026-11-30",
+ "enigmes": [
+  {
+   "format": "devinette",
+   "texte": "J'ai des aiguilles, mais je ne pique jamais. Qui suis-je ?",
+   "reponse": "Une horloge",
+   "explication": "Une horloge (ou une montre) : ses aiguilles donnent l'heure."
+  },
+  {
+   "format": "suite",
+   "items": [
+    "2",
+    "5",
+    "8",
+    "11",
+    "?"
+   ],
+   "reponse": "14",
+   "explication": "On ajoute 3 à chaque fois."
+  },
+  {
+   "format": "symboles",
+   "lignes": [
+    [
+     "losange",
+     "+",
+     "losange",
+     "=",
+     "8"
+    ],
+    [
+     "losange",
+     "+",
+     "etoile",
+     "=",
+     "13"
+    ],
+    [
+     "etoile",
+     "-",
+     "cercle",
+     "=",
+     "6"
+    ],
+    [
+     "cercle",
+     "+",
+     "losange",
+     "+",
+     "etoile",
+     "=",
+     "?"
+    ]
+   ],
+   "valeurs": {
+    "losange": 4,
+    "etoile": 9,
+    "cercle": 3
+   },
+   "reponse": "16",
+   "explication": "Losange 4, étoile 9, cercle 3. Donc 3 + 4 + 9 = 16."
+  },
+  {
+   "format": "intrus",
+   "items": [
+    "Radar",
+    "Kayak",
+    "Ananas",
+    "Rotor"
+   ],
+   "ans": 2,
+   "reponse": "Ananas",
+   "explication": "Radar, kayak et rotor se lisent dans les deux sens. Pas ananas !"
+  },
+  {
+   "format": "logique",
+   "texte": "Un nénuphar double de taille chaque jour. Il couvre tout l'étang en 30 jours. En combien de jours couvre-t-il la moitié de l'étang ?",
+   "reponse": "29 jours",
+   "explication": "Il double chaque jour : la veille du 30e jour, il couvrait donc la moitié."
+  }
+ ],
+ "legende": "Tu bats ton record aujourd'hui ? 🧠 Dis ton score 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp"
+}

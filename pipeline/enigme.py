@@ -119,7 +119,7 @@ class Enigmes:
         self.c, self.E, self.work = c, c["enigmes"], work
         k = datetime.date.fromisoformat(c["date"]).toordinal()
         top, bot, self.A1, self.A2 = THEMES[k % len(THEMES)]
-        self.hook = ACCROCHES[(k // len(THEMES)) % len(ACCROCHES)]
+        self.hook = ACCROCHES[(k + k // 4) % len(ACCROCHES)]
         self.BG = self.make_bg(top, bot)
 
     def make_bg(self, top, bot):

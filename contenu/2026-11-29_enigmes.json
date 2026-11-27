@@ -1,0 +1,92 @@
+{
+ "type": "enigmes",
+ "date": "2026-11-29",
+ "enigmes": [
+  {
+   "format": "suite",
+   "consigne": "Quelle lettre complète la suite ?",
+   "items": [
+    "A",
+    "C",
+    "E",
+    "G",
+    "?"
+   ],
+   "reponse": "I",
+   "explication": "On saute une lettre à chaque fois : A (B) C (D) E (F) G (H) I."
+  },
+  {
+   "format": "devinette",
+   "texte": "Je suis pleine de trous, mais je retiens l'eau. Qui suis-je ?",
+   "reponse": "Une éponge",
+   "explication": "Ses trous absorbent l'eau et la gardent."
+  },
+  {
+   "format": "intrus",
+   "items": [
+    "8",
+    "27",
+    "64",
+    "81"
+   ],
+   "ans": 3,
+   "reponse": "81",
+   "explication": "8, 27 et 64 sont des cubes : 2×2×2, 3×3×3 et 4×4×4. Pas 81."
+  },
+  {
+   "format": "logique",
+   "texte": "Un escargot est au fond d'un puits de 10 mètres. Chaque jour il monte de 3 mètres, chaque nuit il glisse de 2 mètres. En combien de jours sort-il ?",
+   "reponse": "8 jours",
+   "explication": "Après 7 jours il est à 7 m. Le 8e jour, il monte de 3 m et sort."
+  },
+  {
+   "format": "symboles",
+   "lignes": [
+    [
+     "cercle",
+     "+",
+     "cercle",
+     "+",
+     "cercle",
+     "=",
+     "21"
+    ],
+    [
+     "carre",
+     "+",
+     "carre",
+     "+",
+     "cercle",
+     "=",
+     "17"
+    ],
+    [
+     "triangle",
+     "×",
+     "carre",
+     "=",
+     "20"
+    ],
+    [
+     "carre",
+     "×",
+     "carre",
+     "-",
+     "triangle",
+     "+",
+     "cercle",
+     "=",
+     "?"
+    ]
+   ],
+   "valeurs": {
+    "cercle": 7,
+    "carre": 5,
+    "triangle": 4
+   },
+   "reponse": "28",
+   "explication": "Cercle 7, carré 5, triangle 4. Donc 5×5 - 4 + 7 = 28."
+  }
+ ],
+ "legende": "5 énigmes, la dernière est un piège 😏 Tu en as combien ? 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp"
+}

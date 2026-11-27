@@ -25,13 +25,21 @@ def fiche(e, date):
     r["resume"] = e.get("texte") or " ".join(e.get("items", [])) or " | ".join(r.get("lignes", []))
     return r
 
+VIDES = set("qui suis mais plus moins jamais sans avec pour dans tout toute tous elle elles ils sont quoi quel quelle combien".split())
+
+def proximite(x, y):
+    """Part de mots importants en commun entre deux énoncés (0 à 1)."""
+    mx = {w for w in x.split() if len(w) > 3 and w not in VIDES}
+    my = {w for w in y.split() if len(w) > 3 and w not in VIDES}
+    return len(mx & my) / max(1, len(mx | my))
+
 def conflit(a, b):
     """Retourne la raison si a et b sont identiques ou trop proches, sinon None."""
     if a["format"] in ("devinette", "logique") and b["format"] in ("devinette", "logique"):
-        ratio = difflib.SequenceMatcher(None, a["cle"], b["cle"]).ratio()
-        if a["reponse"] == b["reponse"] and (a["format"] == b["format"] == "devinette" or ratio >= 0.4):
+        ratio = proximite(a["cle"], b["cle"])
+        if a["reponse"] == b["reponse"] and (a["format"] == b["format"] == "devinette" or ratio >= 0.3):
             return "même réponse qu'une énigme déjà faite"
-        if ratio >= 0.6: return "énoncé trop proche"
+        if ratio >= 0.5: return "énoncé trop proche"
         return None
     if a["format"] != b["format"]: return None
     if a["cle"] == b["cle"]: return "énigme identique"
