@@ -296,4 +296,5 @@ class EnqueteAudio(Enquete):
                     if ft - shift >= 0: tr.add(tr.sfx, THUNDER, t0 + ft - shift + 0.15, 0.4)
             t0 += dur
         if self.c.get("pluie"): tr.sfx += colored(tr.N, 800, 9000) * 0.035   # bruit de pluie de fond
+        tr.sfx *= self.c.get("volume_bruitages", 0.45)      # bruitages discrets sous la voix
         mixdown(tr, wav, music_gain=0.35, soft=True, chords=E.CHORDS, bpm=78)
