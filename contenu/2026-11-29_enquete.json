@@ -1,0 +1,111 @@
+{
+ "type": "enquete",
+ "date": "2026-11-29",
+ "titre": "Le chalet enneigé",
+ "audio": "voix/2026-11-29_enquete.mp3",
+ "mots": "voix/2026-11-29_enquete_mots.json",
+ "voix_elevenlabs": {
+  "voice_id": "eaGBbHXreemvYFjnRcMw",
+  "nom": "Tomas",
+  "model_id": "eleven_v4"
+ },
+ "decor": "chalet",
+ "orage": false,
+ "neige": [
+  0,
+  2
+ ],
+ "accroche": "Si tu trouves le menteur, tu es un vrai inspecteur.",
+ "recit": [
+  "Un chalet perdu dans la montagne, en plein hiver.",
+  "Toute la nuit, il a neigé sans s'arrêter.",
+  "À six heures du matin, la neige cesse enfin de tomber.",
+  "À huit heures, le propriétaire découvre son coffre-fort grand ouvert.",
+  "Sa montre en or a disparu.",
+  "Dehors, la neige est intacte : pas une seule trace de pas autour du chalet.",
+  "Le voleur est donc encore à l'intérieur.",
+  "Cette nuit-là, trois invités dormaient au chalet.",
+  "L'inspecteur les interroge, un par un."
+ ],
+ "plans": [
+  "large",
+  "fenetre",
+  "fenetre",
+  "tableau",
+  "tableau",
+  "fenetre",
+  "suivre",
+  "large",
+  "large"
+ ],
+ "bandeaux": [
+  {
+   "texte": "NEIGE TOUTE LA NUIT  → 6 h",
+   "de": 1,
+   "a": 2
+  }
+ ],
+ "inspecteur": {
+  "4": [
+   900,
+   "debout"
+  ],
+  "5": [
+   420,
+   "loupe_haut"
+  ],
+  "6": [
+   560,
+   "debout"
+  ],
+  "7": [
+   640,
+   "debout"
+  ]
+ },
+ "evenements": {
+  "tableau": 3,
+  "fenetre": 5
+ },
+ "suspects": [
+  {
+   "perso": "moniteur",
+   "nom": "Le moniteur",
+   "court": "Café près de la cheminée",
+   "intro": "Le moniteur de ski, d'abord :",
+   "dit": "J'ai dormi jusqu'à sept heures et demie. Ensuite, j'ai bu mon café près de la cheminée."
+  },
+  {
+   "perso": "photographe",
+   "nom": "La photographe",
+   "court": "Photos dehors à 6 h 30",
+   "intro": "La photographe :",
+   "dit": "Moi, je me suis levée à six heures et demie. Je suis sortie faire le tour du chalet, pour photographier le lever du soleil sur la neige."
+  },
+  {
+   "perso": "cousin",
+   "nom": "Le cousin",
+   "court": "Lisait au lit jusqu'à 8 h",
+   "intro": "Et enfin, le cousin du propriétaire :",
+   "dit": "J'étais dans ma chambre. J'ai lu un roman au lit, jusqu'à huit heures."
+  }
+ ],
+ "carnet": "L'inspecteur relit ses notes. Il a déjà trouvé le menteur.",
+ "recap": [
+  {
+   "icone": "neige",
+   "texte": "La neige s'arrête à 6 h"
+  },
+  {
+   "icone": "pas",
+   "texte": "Aucune trace de pas dehors"
+  },
+  {
+   "icone": "coffre",
+   "texte": "Coffre vide découvert à 8 h"
+  }
+ ],
+ "fin": "À toi de jouer : qui a volé la montre ? Donne ta réponse en commentaire, et abonne-toi pour la prochaine enquête !",
+ "reponse": "La photographe (dehors à 6 h 30, mais aucune trace dans la neige)",
+ "legende": "Qui a volé la montre ? ❄️🔍 Un seul suspect ment… ta réponse en commentaire 👇 #enquete #enigme #enigmes #detective #logique #mystere #fyp"
+}

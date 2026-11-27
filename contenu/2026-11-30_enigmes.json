@@ -81,5 +81,12 @@
    "explication": "Il double chaque jour : la veille du 30e jour, il couvrait donc la moitié."
   }
  ],
- "legende": "Tu bats ton record aujourd'hui ? 🧠 Dis ton score 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp"
+ "legende": "Tu bats ton record aujourd'hui ? 🧠 Dis ton score 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp",
+ "audio": "voix/2026-11-30_enigmes.mp3",
+ "mots": "voix/2026-11-30_enigmes_mots.json",
+ "voix_elevenlabs": {
+  "voice_id": "eaGBbHXreemvYFjnRcMw",
+  "nom": "Tomas",
+  "model_id": "eleven_v4"
+ }
 }

@@ -83,5 +83,12 @@
    "explication": "Balle 0,05 € et batte 1,05 € : total 1,10 €, avec bien 1 € d'écart."
   }
  ],
- "legende": "La dernière, tu la trouves ? 🤔 Ton score sur 5 en commentaire 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp"
+ "legende": "La dernière, tu la trouves ? 🤔 Ton score sur 5 en commentaire 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp",
+ "audio": "voix/2026-11-28_enigmes.mp3",
+ "mots": "voix/2026-11-28_enigmes_mots.json",
+ "voix_elevenlabs": {
+  "voice_id": "eaGBbHXreemvYFjnRcMw",
+  "nom": "Tomas",
+  "model_id": "eleven_v4"
+ }
 }

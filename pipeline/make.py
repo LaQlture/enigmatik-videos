@@ -26,6 +26,9 @@ def main(src):
     elif c["type"] == "enquete":
         from enquete import Enquete
         OBJ = Enquete(c, work)
+    elif c.get("audio"):                                  # quiz avec voix ElevenLabs
+        from enigme_audio import EnigmesAudio
+        OBJ = EnigmesAudio(c, work, os.path.dirname(os.path.abspath(src)))
     else:
         from enigme import Enigmes
         OBJ = Enigmes(c, work)      # vérifie aussi le contenu (formats, calculs des symboles…)
