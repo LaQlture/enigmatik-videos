@@ -1,0 +1,91 @@
+{
+ "type": "enigmes",
+ "date": "2026-11-27",
+ "enigmes": [
+  {
+   "format": "suite",
+   "consigne": "Quel nombre complète la suite ?",
+   "items": [
+    "3",
+    "6",
+    "12",
+    "24",
+    "?"
+   ],
+   "reponse": "48",
+   "explication": "Chaque nombre est multiplié par 2."
+  },
+  {
+   "format": "intrus",
+   "items": [
+    "Baleine",
+    "Requin",
+    "Dauphin",
+    "Orque"
+   ],
+   "ans": 1,
+   "reponse": "Requin",
+   "explication": "C'est le seul poisson : les trois autres sont des mammifères."
+  },
+  {
+   "format": "symboles",
+   "lignes": [
+    [
+     "triangle",
+     "+",
+     "triangle",
+     "+",
+     "triangle",
+     "=",
+     "15"
+    ],
+    [
+     "triangle",
+     "+",
+     "cercle",
+     "+",
+     "cercle",
+     "=",
+     "11"
+    ],
+    [
+     "cercle",
+     "+",
+     "carre",
+     "=",
+     "7"
+    ],
+    [
+     "carre",
+     "+",
+     "triangle",
+     "×",
+     "cercle",
+     "=",
+     "?"
+    ]
+   ],
+   "valeurs": {
+    "triangle": 5,
+    "cercle": 3,
+    "carre": 4
+   },
+   "reponse": "19",
+   "explication": "Triangle 5, cercle 3, carré 4. On multiplie d'abord : 4 + 15 = 19."
+  },
+  {
+   "format": "devinette",
+   "texte": "Plus j'ai de gardiens, moins je suis gardé. Qui suis-je ?",
+   "reponse": "Un secret",
+   "explication": "Plus il y a de gens qui le connaissent, moins il est bien gardé."
+  },
+  {
+   "format": "logique",
+   "texte": "Si 5 machines fabriquent 5 objets en 5 minutes, combien de minutes faut-il à 100 machines pour fabriquer 100 objets ?",
+   "reponse": "5 minutes",
+   "tts_reponse": "5 minutes",
+   "explication": "Chaque machine fait 1 objet en 5 minutes. Donc 100 machines font 100 objets en 5 minutes."
+  }
+ ],
+ "legende": "Tu en trouves combien sur 5 ? 🧠 Dis ton score en commentaire 👇 #enigme #enigmes #cassetete #logique #devinette #testdelogique #fyp"
+}
